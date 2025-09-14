@@ -45,10 +45,7 @@ export function AboutSection() {
               Comprehensive Engineering Solutions
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              From concept design to project execution, we provide detailed
-              technical support, industry expertise, cost-effective optimized
-              long-term solutions, ensuring safety, quality, and client
-              satisfaction.
+              We deliver complete engineering services designed to simplify your engineering projects and add real value. From initial planning to execution and ongoing support, our solutions are built around your goals, ensuring efficiency, reliability, and cost savings at every stage. With a commitment to quality and innovation, we help you achieve successful outcomes while reducing risks and maximizing returns on investment.
             </p>
           </div>
         </div>

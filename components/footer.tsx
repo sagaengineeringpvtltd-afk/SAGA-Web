@@ -37,7 +37,7 @@ export function Footer() {
               className="mb-6"
             />
             <h3 className="text-lg font-semibold mb-4">Contact Us:</h3>
-            <div className="text-gray-100">
+            <div className="text-gray-100 text-center md:text-left">
 
                                      <a
       href="https://wa.me/94711707030"

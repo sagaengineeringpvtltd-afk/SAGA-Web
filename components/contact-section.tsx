@@ -150,7 +150,7 @@ const [isLoading, setIsLoading] = useState(false);
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      rows={6}
+                      rows={4}
                       required
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                   ></textarea>
@@ -227,7 +227,7 @@ const [isLoading, setIsLoading] = useState(false);
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-[#000094] rounded-full flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
@@ -239,7 +239,7 @@ const [isLoading, setIsLoading] = useState(false);
                       Saturday: 9:00 AM - 4:00 PM
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
