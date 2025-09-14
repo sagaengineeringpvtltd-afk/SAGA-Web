@@ -8,6 +8,11 @@ import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "SAGA Engineering - Machinery Import & Supply | Industrial Equipment Solutions",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   description:
     "SAGA Engineering specializes in the import and supply of industrial machinery, pumps, compressors, conveyors, motors, and electrical systems. Professional engineering services with comprehensive maintenance support.",
   keywords:
@@ -37,7 +42,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://saga-engineering.com",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -54,6 +58,9 @@ export default function RootLayout({
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://saga-engineering.com" />
+            <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
