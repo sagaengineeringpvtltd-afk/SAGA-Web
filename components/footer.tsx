@@ -26,16 +26,20 @@ export function Footer() {
       <footer className="bg-gray-800 text-white">
       {/* Top section */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12  max-w-[90%] ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
           {/* Contact Info */}
-          <div className="flex flex-col items-center md:items-start">
-            <Image
+          <div className="flex flex-col items-center md:items-start text-center">
+            <div className="flex justify-center items-center gap-4 mb-6">
+                          <Image
               src="/Logo2.png"
               alt="Company Logo"
               width={96}
               height={96}
-              className="mb-6"
+              className=""
             />
+            <div className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold">SAGA Engineering (Pvt) Ltd</div>
+            </div>
+
             <h3 className="text-lg font-semibold mb-4">Contact Us:</h3>
             <div className="text-gray-100 text-center md:text-left">
 
@@ -59,7 +63,7 @@ export function Footer() {
           </div>
 
           {/* Short Links */}
-          <div className="flex flex-col items-center md:items-start lg:col-start-3 md:py-10">
+          <div className="flex flex-col items-center md:items-start lg:col-start-3 md:py-10 md:ml-20 mt-10 md:mt-0">
             <h3 className="text-lg font-semibold mb-4">SHORT LINKS</h3>
             <ul className="text-center md:text-left text-gray-100">
               <li className="mb-2">
