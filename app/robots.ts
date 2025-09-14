@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://www.sagaengineering.lk/sitemap.xml",
+    sitemap: "https://sagaengineering.lk/sitemap.xml",
   }
 }

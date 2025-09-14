@@ -1,5 +1,3 @@
-// src/app/api/contact/route.js
-
 import { mailOptions, transporter } from "../../../config/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS = {
@@ -29,8 +27,6 @@ const generateEmailContent = (data) => {
 export async function POST(request) {
   try {
     const data = await request.json();
-    console.log("Received form data:", data);
-
     const { name, email, phone, message } = data;
     if (!name || !email || !phone || !message) {
       return new Response(JSON.stringify({ message: "Bad request" }), {
@@ -49,7 +45,6 @@ export async function POST(request) {
       status: 200,
     });
   } catch (error) {
-    console.error("Error sending email:", error);
     return new Response(JSON.stringify({ message: error.message }), {
       status: 500,
     });

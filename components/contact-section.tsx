@@ -14,13 +14,10 @@ export function ContactSection() {
     phone: "",
     message: "",
   })
-  console.log(formData);
 const [isLoading, setIsLoading] = useState(false);
  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true); // Set loading state to true when submission starts
-    console.log(formData);
-
     try {
       const response = await sendContactForm(formData);
       if (response && response.success) {

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.sagaengineering.lk",
+    url: "https://sagaengineering.lk/",
     title: "SAGA Engineering - Machinery Import & Supply",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     google: "MlaII3HRwKyXP_ox1HcnH54B97brHC2thjHIVXT68TI",
   },
   alternates: {
-    canonical: "https://www.sagaengineering.lk",
+    canonical: "https://sagaengineering.lk/",
   },
 }
 
@@ -59,7 +59,7 @@ export default function RootLayout({
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <link rel="canonical" href="https://www.sagaengineering.lk" />
+        <link rel="canonical" href="https://sagaengineering.lk/" />
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
@@ -72,8 +72,8 @@ export default function RootLayout({
               name: "SAGA Engineering",
               description:
                 "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
-              url: "https://www.sagaengineering.lk",
-              logo: "https://www.sagaengineering.lk/logo.png",
+              url: "https://sagaengineering.lk/",
+              logo: "https://sagaengineering.lk/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+94711707030",

@@ -20,8 +20,8 @@ export default function AboutPage() {
           content="We deliver comprehensive mechanical engineering services with a focus on sustainability, safety, and innovation."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.sagaengineering.lk/about" />
-        <meta property="og:image" content="https://www.sagaengineering.lk/og-image.jpg" />
+        <meta property="og:url" content="https://sagaengineering.lk/about" />
+        <meta property="og:image" content="https://sagaengineering.lk/og-image.jpg" />
       </Head>
 
       {/* Page Section */}
