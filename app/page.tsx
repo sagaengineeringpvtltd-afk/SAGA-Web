@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://saga-engineering.com",
+    url: "https://www.sagaengineering.lk",
     title: "SAGA Engineering - Machinery Import & Supply",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "MlaII3HRwKyXP_ox1HcnH54B97brHC2thjHIVXT68TI",
   },
   alternates: {
-    canonical: "https://saga-engineering.com",
+    canonical: "https://www.sagaengineering.lk",
   },
 } // ✅ FIXED: added missing closing curly brace
 
