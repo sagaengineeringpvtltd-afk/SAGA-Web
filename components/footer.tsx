@@ -38,15 +38,22 @@ export function Footer() {
             />
             <h3 className="text-lg font-semibold mb-4">Contact Us:</h3>
             <div className="text-gray-100">
-         <p className="mb-2 text-center md:text-left">
-              Whatsapp : +94 71 11 70 70 30
-            </p>
-            <p className="mb-2 text-center md:text-left">
+
+                                     <a
+      href="https://wa.me/94711707030"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className=" text-center md:text-left"
+    >
+      Whatsapp : +94 711 70 70 30
+    </a>
+            <p className="mb-2 mt-2 text-center md:text-left">
               Location : 8/A, Kahathuduwa, Polgasowita
             </p>
-            <p className="text-center md:text-left">
-              Email : sales@sagaengineering.lk
-            </p>
+
+                 <a href="mailto:sales@sagaengineering.lk" className="text-center md:text-left ">
+                  Email : sales@sagaengineering.lk
+                </a>
             </div>
    
           </div>

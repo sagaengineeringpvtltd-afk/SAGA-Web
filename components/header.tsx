@@ -107,8 +107,8 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border">
-            <nav className="px-4 py-4 space-y-4">
+          <div className="md:hidden  rounded-b-xl">
+            <nav className="px-4 py-6 space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -123,7 +123,7 @@ export function Header() {
                 </Link>
               ))}
               <Link href="/contact" className="block">
-                <button className="w-full mt-4" onClick={() => setIsMenuOpen(false)}>
+                <button className="w-full p-2 mt-4 bg-[#000094] rounded-4xl text-white cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                   Contact Us
                 </button>
               </Link>

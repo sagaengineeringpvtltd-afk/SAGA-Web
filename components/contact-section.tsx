@@ -3,7 +3,10 @@ import Head from "next/head";
 import Lottie from "lottie-react";
 import React, { useState } from "react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { sendContactForm } from "../lib/api";
+import { toast, ToastContainer } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 export function ContactSection() {
     const [formData, setFormData] = useState({
     name: "",
@@ -11,17 +14,38 @@ export function ContactSection() {
     phone: "",
     message: "",
   })
+  console.log(formData);
+const [isLoading, setIsLoading] = useState(false);
+ const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true); // Set loading state to true when submission starts
+    console.log(formData);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-  }
+    try {
+      const response = await sendContactForm(formData);
+      if (response && response.success) {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        toast.error('There was an issue sending your message. Please try again later.');
+      }
+    } catch (error) {
+      if(error){
+        toast.error('Error: Failed to send message. Please try again later.');
+      }
+    } finally {
+      setIsLoading(false); // Set loading state to false when submission ends
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }))
-  }
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
   return (
     <>
       <Head>
@@ -33,6 +57,20 @@ export function ContactSection() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
+{isLoading && (
+  <div className="fixed inset-0 flex flex-col items-center justify-center bg-black/60  z-50">
+
+    <Lottie
+  animationData={require("../public/emailloading.json")}
+  loop={true}
+  className="w-42 h-42"
+/>
+<div>
+  <p className="text-base  text-white">Sending your message...</p>
+</div>
+
+  </div>
+)}
       <main className="bg-white font-inter">
         <div className="container mx-auto px-4 mb-10 py-4 max-w-[90%]">
           {/* Header */}
@@ -59,7 +97,7 @@ export function ContactSection() {
                 Ready to discuss your industrial engineering needs? Contact us today for expert consultation.
               </p>
 
-              <form action="#" method="POST" className="space-y-6">
+              <form action="#" method="POST" className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
@@ -76,7 +114,7 @@ export function ContactSection() {
                     />
                   </div>
                   <div>
-<label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+<label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
                   <input
                     id="phone"
                       name="phone"
@@ -120,10 +158,11 @@ export function ContactSection() {
 
                 <div>
                   <button
+                   disabled={isLoading} 
                     type="submit"
-                    className="w-full md:w-auto text-center bg-[#101828] text-white font-bold py-3 px-8 rounded-md hover:bg-[#000094] transition-colors cursor-pointer"
+                    className="w-full md:w-auto text-center bg-[#000094] text-white font-bold py-3 px-8 rounded-md hover:bg-[#00005a] transition-colors cursor-pointer"
                   >
-                    Submit
+                      {isLoading ? 'Sending...' : 'Send message'}
                   </button>
                 </div>
               </form>
@@ -151,7 +190,15 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                    <p className="text-muted-foreground">+94 711 70 70 30</p>
+                    {/* <p className="text-muted-foreground">+94 711 70 70 30</p> */}
+                        <a
+      href="https://wa.me/94711707030"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#000094] text-muted-foreground"
+    >
+      +94 711 70 70 30
+    </a>
                   </div>
                 </div>
 
@@ -161,7 +208,9 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                    <p className="text-muted-foreground">sales@sagaengineering.lk</p>
+                          <a href="mailto:sales@sagaengineering.lk" className=" hover:text-[#000094] text-muted-foreground">
+                  sales@sagaengineering.lk
+                </a>
                   </div>
                 </div>
 
@@ -198,6 +247,7 @@ export function ContactSection() {
             </div>
           </main>
         </div>
+              <ToastContainer />
       </main>
     </>
   );
