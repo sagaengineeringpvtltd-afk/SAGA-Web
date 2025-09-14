@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
   },
   verification: {
-    google: "MlaII3HRwKyXP_ox1HcnH54B97brHC2thjHIVXT68TI",
+    google: "ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ",
   },
   alternates: {
     canonical: "https://sagaengineering.lk/",
