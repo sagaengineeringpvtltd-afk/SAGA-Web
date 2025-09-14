@@ -1,15 +1,17 @@
 'use client'
 import Head from "next/head";
 import { Settings, Truck, Wrench } from "lucide-react";
-
+import { useRouter } from "next/navigation";
 export default function Services() {
   // Services array
+  const router = useRouter();
   const services = [
     {
       icon: Settings,
       title: "Design, Installation & Maintenance",
       description:
         "Our vision is to redefine engineering excellence by delivering smart, sustainable solutions that drive innovation and efficiency.",
+        
     },
     {
       icon: Truck,
@@ -73,7 +75,7 @@ export default function Services() {
 
 
                     {/* Button */}
-                    <button className="w-[50%] cursor-pointer bg-transparent border border-[#000094] text-[#000094] font-medium py-2 rounded-lg hover:bg-[#000094] hover:text-white transition-colors">
+                    <button onClick={() => router.push(`/services?service=${index}`)} className="w-[50%] cursor-pointer bg-transparent border border-[#000094] text-[#000094] font-medium py-2 rounded-lg hover:bg-[#000094] hover:text-white transition-colors">
                       View More
                     </button>
                   </div>

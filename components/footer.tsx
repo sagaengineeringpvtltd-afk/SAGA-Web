@@ -1,5 +1,7 @@
 import { Separator } from "@/components/ui/separator"
 import { Linkedin, Facebook, Twitter, Youtube, Instagram, Play } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -21,50 +23,60 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
-              <h3 className="text-2xl font-bold">SAGA Engineering</h3>
+      <footer className="bg-gray-800 text-white">
+      {/* Top section */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12  max-w-[90%] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Contact Info */}
+          <div className="flex flex-col items-center md:items-start">
+            <Image
+              src="/Logo2.png"
+              alt="Company Logo"
+              width={96}
+              height={96}
+              className="mb-6"
+            />
+            <h3 className="text-lg font-semibold mb-4">Contact Us:</h3>
+            <div className="text-gray-100">
+         <p className="mb-2 text-center md:text-left">
+              Whatsapp : +94 71 11 70 70 30
+            </p>
+            <p className="mb-2 text-center md:text-left">
+              Location : 8/A, Kahathuduwa, Polgasowita
+            </p>
+            <p className="text-center md:text-left">
+              Email : sales@sagaengineering.lk
+            </p>
             </div>
-
-            <div className="space-y-4 text-gray-300">
-              <div>
-                <p className="font-semibold text-white mb-2">WhatsApp: +94 711 70 70 30</p>
-              </div>
-              <div>
-                <p className="mb-1">No. 14, Sir Baron Jayatilaka Mawatha,</p>
-                <p>Colombo 01, Western 00100, LK</p>
-              </div>
-              <div>
-                <p>info@sagaengineering.lk</p>
-              </div>
-            </div>
+   
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6 text-blue-400">SHORT LINKS</h4>
-            <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+          {/* Short Links */}
+          <div className="flex flex-col items-center md:items-start lg:col-start-3 md:py-10">
+            <h3 className="text-lg font-semibold mb-4">SHORT LINKS</h3>
+            <ul className="text-center md:text-left text-gray-100">
+              <li className="mb-2">
+                <Link href="/" className="hover:text-blue-400">
+                  Home
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link href="/services" className="hover:text-blue-400">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-400">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Social Media */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6 text-blue-400">FOLLOW</h4>
-            <div className="flex flex-wrap gap-3">
+          {/* Social Links */}
+          {/* <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-lg font-semibold mb-4">FOLLOW</h3>
+                        <div className="flex flex-wrap gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -76,26 +88,25 @@ export function Footer() {
                 </a>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
+      </div>
 
-        <Separator className="my-8 bg-gray-700" />
-
-        {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex flex-col sm:flex-row gap-4 text-sm text-gray-400">
-            <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+      {/* Bottom bar */}
+      <div className="bg-gray-900 py-4 ">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm max-w-[90%]">
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mb-4 md:mb-0 text-center">
+            <Link href="/terms" className="hover:text-blue-400">
               TERMS & CONDITIONS
-            </a>
-            <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+            </Link>
+            <Link href="/privacy" className="hover:text-blue-400">
               PRIVACY POLICY
-            </a>
+            </Link>
           </div>
-
-          <div className="text-sm text-gray-400 text-center">
-            <p>Copyright © {currentYear} SAGA Engineering.</p>
-            <p>All Rights Reserved.</p>
-          </div>
+          <p className="text-center md:text-right text-gray-300">
+            Copyright © {new Date().getFullYear()} SAGA Engineering
+            <br /> All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>

@@ -3,8 +3,17 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useRouter } from "next/navigation"
 
 const slides = [
+   {
+    id: 0,
+    title: "Design, installation & maintenance",
+    description:
+      "Our expert team provides comprehensive installation and commissioning services for all industrial equipment, ensuring optimal performance and safety.",
+    image: "/Design, installation & maintenance.jpeg",
+    cta: "See More",
+  },
   {
     id: 1,
     title: "Machinery Import & Supply",
@@ -15,14 +24,6 @@ const slides = [
   },
   {
     id: 2,
-    title: "Design, installation & maintenance",
-    description:
-      "Our expert team provides comprehensive installation and commissioning services for all industrial equipment, ensuring optimal performance and safety.",
-    image: "/Design, installation & maintenance.jpeg",
-    cta: "See More",
-  },
-  {
-    id: 3,
     title: "General Maintenance & Support",
     description:
       "Our General Maintenance and Support services cover preventive and corrective maintenance for industrial machinery, electrical systems, and mechanical components.",
@@ -34,6 +35,7 @@ const slides = [
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const router = useRouter()
 
   useEffect(() => {
     if (!isAutoPlaying) return
@@ -46,6 +48,7 @@ export function HeroSlider() {
   }, [isAutoPlaying])
 
   const goToSlide = (index: number) => {
+
     setCurrentSlide(index)
     setIsAutoPlaying(false)
     setTimeout(() => setIsAutoPlaying(true), 10000)
@@ -88,26 +91,20 @@ export function HeroSlider() {
        {/* Content */}
 <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
   <div className=" text-center ">
-    <h1 className="text-3xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
+    <h1 className="text-3xl max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
       {slide.title}
     </h1>
     <div className="flex flex-col items-center">
-      <p className="text-base max-w-4xl sm:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed text-center ">
+      <p className="text-base max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl sm:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed text-center ">
         {slide.description}
       </p>
     </div>
 
     <button
       className="text-lg px-10 py-2 bg-[#000094] rounded-full font-medium text-white cursor-pointer transition"
-      onClick={() => {
-        if (slide.cta === "Contact Us") {
-          document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-        } else if (slide.cta === "Our Services") {
-          document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
-        } else {
-          document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-        }
-      }}
+
+      onClick={() => router.push(`/services?service=${index}`)}
+      
     >
       {slide.cta}
     </button>
