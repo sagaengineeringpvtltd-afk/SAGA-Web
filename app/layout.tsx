@@ -60,9 +60,9 @@ export default function RootLayout({
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://saga-engineering.com" />
-            <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
