@@ -8,7 +8,7 @@ import { Suspense } from "react"
 import { icons } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "SAGA Engineering - Machinery Import & Supply | Industrial Equipment Solutions",
+  title: "SAGA Engineering (Pvt) Ltd",
   icons:{
     icon: [
       { url: "/favicon.ico" },
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   keywords:
     "machinery import, industrial equipment, pumps, compressors, conveyors, motors, electrical systems, engineering services, maintenance, installation",
   authors: [{ name: "SAGA Engineering" }],
-  creator: "SAGA Engineering",
-  publisher: "SAGA Engineering",
+  creator: "SAGA Engineering (Pvt) Ltd",
+  publisher: "SAGA Engineering (Pvt) Ltd",
   robots: "index, follow",
   openGraph: {
     type: "website",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     title: "SAGA Engineering - Machinery Import & Supply",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
-    siteName: "SAGA Engineering",
+    siteName: "SAGA Engineering (Pvt) Ltd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SAGA Engineering - Machinery Import & Supply",
+    title: "SAGA Engineering (Pvt) Ltd",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
   },

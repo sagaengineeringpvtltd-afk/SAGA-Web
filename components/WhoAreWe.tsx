@@ -7,14 +7,14 @@ export default function AboutPage() {
     <>
       {/* SEO Meta Tags */}
       <Head>
-        <title>About Our Company | Mechanical Engineering Experts</title>
+        <title>About Our Company | SAGA Engineering (Pvt) Ltd</title>
         <meta
           name="description"
           content="We specialize in mechanical engineering services: design, project execution, installation, and maintenance. Delivering reliable, efficient, and sustainable solutions."
         />
         <meta name="keywords" content="Mechanical Engineering, Industrial Solutions, Installation, Maintenance, Project Execution, Engineering Company" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="About Our Company | Mechanical Engineering Experts" />
+        <meta property="og:title" content="About Our Company | SAGA Engineering (Pvt) Ltd" />
         <meta
           property="og:description"
           content="We deliver comprehensive mechanical engineering services with a focus on sustainability, safety, and innovation."
