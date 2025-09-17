@@ -77,7 +77,8 @@ export default function RootLayout({
           "@type": "PostalAddress",
           "streetAddress": "8/A, Kahathuduwa, Polgasowita",
           "addressLocality": "Colombo",
-          "addressCountry": "LK"
+          "addressCountry": "LK",
+          "postalCode": "10230"
         }
       }`,
     };
@@ -158,6 +159,7 @@ export default function RootLayout({
                 streetAddress: "8/A, Kahathuduwa, Polgasowita",
                 addressLocality: "Colombo",
                 addressCountry: "LK",
+                postalCode: "10230",
               },
               // sameAs: ["https://linkedin.com/company/saga-engineering", "https://facebook.com/sagaengineering"],
             }),
