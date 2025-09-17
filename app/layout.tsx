@@ -9,6 +9,10 @@ import { icons } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "SAGA Engineering (Pvt) Ltd",
+  other:{
+    site_name: "SAGA Engineering (Pvt) Ltd"
+
+  },
   icons:{
     icon: [
       { url: "/favicon.ico" },
@@ -59,6 +63,11 @@ export default function RootLayout({
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta property="og:site_name" content="SAGA Engineering (Pvt) Ltd" />
+        <meta property="og:url" content="https://sagaengineering.lk/" />
+        <meta property="og:title" content="SAGA Engineering (Pvt) Ltd" />
+        <meta property="og:description" content="Professional industrial machinery import and supply services with comprehensive engineering solutions." />
+        <meta property="og:image" content="https://sagaengineering.lk/Logo.webp" />
         <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
         <link rel="canonical" href="https://sagaengineering.lk/" />
         <link rel="icon" href="/favicon.ico?v=2" />
@@ -75,7 +84,7 @@ export default function RootLayout({
               description:
                 "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
               url: "https://sagaengineering.lk/",
-              logo: "https://sagaengineering.lk/logo.png",
+              logo: "https://sagaengineering.lk/Logo.webp",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+94711707030",
@@ -106,7 +115,7 @@ export default function RootLayout({
               publisher: {
                 "@type": "Organization",
                 name: "SAGA Engineering (Pvt) Ltd",
-                logo: "https://sagaengineering.lk/logo.png"
+                logo: "https://sagaengineering.lk/Logo.webp"
               },
               
               // Search functionality
