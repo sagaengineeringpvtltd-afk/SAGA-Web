@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
 import { icons } from "lucide-react"
-
+import Head from "next/head";
 export const metadata: Metadata = {
   title: "SAGA Engineering (Pvt) Ltd",
   other:{
@@ -56,6 +56,58 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
+   function addOrganizationJsonLd() {
+    return {
+      __html: `{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SAGA Engineering (Pvt) Ltd",
+        "alternateName": "SAGA Engineering",
+        "description": "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
+        "url": "https://sagaengineering.lk/",
+        "logo": "https://sagaengineering.lk/Logo.webp",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+94711707030",
+          "contactType": "customer service",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8/A, Kahathuduwa, Polgasowita",
+          "addressLocality": "Colombo",
+          "addressCountry": "LK"
+        }
+      }`,
+    };
+  }
+
+  function addWebsiteJsonLd() {
+    return {
+      __html: `{
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SAGA Engineering (Pvt) Ltd",
+        "alternateName": "SAGA Engineering",
+        "url": "https://sagaengineering.lk/",
+        "description": "Your business is our passion - Professional industrial engineering solutions",
+        "publisher": {
+          "@type": "Organization",
+          "name": "SAGA Engineering (Pvt) Ltd",
+          "logo": "https://sagaengineering.lk/Logo.webp"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://sagaengineering.lk/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }`,
+    };
+  }
   return (
     <html lang="en">
       <head>
@@ -73,6 +125,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
+           <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addOrganizationJsonLd()}
+          key="organization-jsonld"
+        />
+          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addWebsiteJsonLd()}
+          key="website-jsonld"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
