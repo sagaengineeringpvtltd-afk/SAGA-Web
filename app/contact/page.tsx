@@ -13,8 +13,11 @@ export const metadata: Metadata = {
     title: "Contact SAGA Engineering",
     description:
       "Get in touch with SAGA Engineering for all your industrial equipment and machinery needs. Professional engineering services in Sri Lanka.",
-    url: "/contact",
+    url: "https://sagaengineering.lk/contact",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://sagaengineering.lk/contact",
   },
 }
 

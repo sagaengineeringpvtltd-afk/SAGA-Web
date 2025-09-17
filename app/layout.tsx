@@ -70,7 +70,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "SAGA Engineering",
+              name: "SAGA Engineering (Pvt) Ltd",
+              alternateName: "SAGA Engineering",
               description:
                 "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
               url: "https://sagaengineering.lk/",
@@ -88,6 +89,98 @@ export default function RootLayout({
                 addressCountry: "LK",
               },
               // sameAs: ["https://linkedin.com/company/saga-engineering", "https://facebook.com/sagaengineering"],
+            }),
+          }}
+        />
+
+          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "SAGA Engineering (Pvt) Ltd",
+              alternateName: "SAGA Engineering",
+              url: "https://sagaengineering.lk/",
+              description: "Your business is our passion - Professional industrial engineering solutions",
+              publisher: {
+                "@type": "Organization",
+                name: "SAGA Engineering (Pvt) Ltd",
+                logo: "https://sagaengineering.lk/logo.png"
+              },
+              
+              // Search functionality
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://sagaengineering.lk/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              },
+              
+              // Main pages for sitelinks - Critical for Google understanding
+              mainEntity: [
+                {
+                  "@type": "WebPage",
+                  "@id": "https://sagaengineering.lk/contact",
+                  name: "Contact Us",
+                  description: "Address: 8/A, Kahathuduwa, Polgasowita, Colombo Email: sales@sagaengineering.lk, Phone: +94711707030",
+                  url: "https://sagaengineering.lk/contact"
+                },
+               
+                {
+                  "@type": "WebPage",
+                  "@id": "https://sagaengineering.lk/about",
+                  name: "Company Profile", 
+                  description: "SAGA Engineering expertise in innovation, products and technology to provide comprehensive engineering solutions",
+                  url: "https://sagaengineering.lk/about"
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://sagaengineering.lk/services",
+                  name: "Our Services",
+                  description: "Innovative Solutions focused on helping every business with industrial machinery and comprehensive engineering support",
+                  url: "https://sagaengineering.lk/services"
+                }
+              ]
+            }),
+          }}
+        />
+        
+        {/* Breadcrumb Schema for navigation structure */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://sagaengineering.lk/"
+                },
+                {
+                  "@type": "ListItem", 
+                  position: 2,
+                  name: "Contact Us",
+                  item: "https://sagaengineering.lk/contact"
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
+                  name: "Company Profile",
+                  item: "https://sagaengineering.lk/about"
+                },
+                {
+                  "@type": "ListItem",
+                  position: 5,
+                  name: "Services", 
+                  item: "https://sagaengineering.lk/services"
+                }
+              ]
             }),
           }}
         />
