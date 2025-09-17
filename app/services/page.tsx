@@ -4,13 +4,13 @@ import { Footer } from "@/components/footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Our Services - SAGA Engineering | Machinery Import & Supply",
+  title: "Our Services - SAGA Engineering",
   description:
     "Explore SAGA Engineering's comprehensive services including machinery import & supply, design & installation, maintenance & support for industrial equipment and engineering solutions.",
   keywords:
     "engineering services, machinery import, industrial equipment supply, design installation, maintenance support, pumps, compressors, conveyors, motors",
   openGraph: {
-    title: "SAGA Engineering Services - Machinery Import & Supply",
+    title: "SAGA Engineering Services",
     description:
       "Comprehensive engineering services including machinery import, design & installation, and maintenance support for industrial equipment.",
     url: "/services",

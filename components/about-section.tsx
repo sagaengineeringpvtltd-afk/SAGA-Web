@@ -41,7 +41,7 @@ export function AboutSection() {
 
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[] leading-tight">
+            <h1 className=" text-3xl md:text-5xl lg:text-6xl font-bold text-[] leading-tight">
               Comprehensive Engineering Solutions
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -52,7 +52,7 @@ export function AboutSection() {
           {/* Vision */}
           <div className="flex justify-center items-center">
             <div className="w-full border-2 border-dashed border-[#B5B5FF] rounded-lg p-8 mb-12 relative">
-              <h2 className="text-3xl font-semibold text-[#000094] bg-white px-4 absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#000094] bg-white px-4 absolute -top-4 left-1/2 transform -translate-x-1/2 text-center">
                 Our Vision
               </h2>
               <p className="text-lg text-gray-600 text-center mx-auto mt-8">
@@ -66,7 +66,7 @@ export function AboutSection() {
           {/* Mission */}
           <div className="flex justify-center items-center">
             <div className="w-full border-2 border-dashed border-[#B5B5FF] rounded-lg p-8 mb-12 relative">
-              <h2 className="text-3xl font-semibold text-[#000094] bg-white px-4 absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <h2 className=" text-2xl sm:text-3xl font-semibold text-[#000094] bg-white px-4 absolute -top-4 left-1/2 transform -translate-x-1/2 text-center">
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 text-center mx-auto mt-8">

@@ -90,12 +90,12 @@ export function HeroSlider() {
       <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
        {/* Content */}
 <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
-  <div className=" text-center ">
-    <h1 className="text-3xl max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
+  <div className=" text-center items-center flex flex-col ">
+    <h1 className="text-3xl max-w-[80%] sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
       {slide.title}
     </h1>
     <div className="flex flex-col items-center">
-      <p className="text-base max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl sm:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed text-center ">
+      <p className="text-base max-w-[90%] sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl sm:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed text-center ">
         {slide.description}
       </p>
     </div>
@@ -116,7 +116,7 @@ export function HeroSlider() {
   ))}
 
   {/* Navigation Arrows */}
-  <button
+  {/* <button
     onClick={prevSlide}
     className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 hover:bg-white/30 transition"
     aria-label="Previous slide"
@@ -129,7 +129,7 @@ export function HeroSlider() {
     aria-label="Next slide"
   >
     <ChevronRight className="w-6 h-6 text-white" />
-  </button>
+  </button> */}
 
   {/* Slide Indicators */}
   <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex space-x-3">

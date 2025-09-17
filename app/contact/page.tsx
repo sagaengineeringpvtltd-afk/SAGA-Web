@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords:
     "contact saga engineering, industrial equipment contact, machinery supply contact, engineering services sri lanka, colombo engineering company",
   openGraph: {
-    title: "Contact SAGA Engineering - Industrial Equipment Specialists",
+    title: "Contact SAGA Engineering",
     description:
       "Get in touch with SAGA Engineering for all your industrial equipment and machinery needs. Professional engineering services in Sri Lanka.",
     url: "/contact",
