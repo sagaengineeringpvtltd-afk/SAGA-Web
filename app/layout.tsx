@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://sagaengineering.lk/",
-    title: "SAGA Engineering - Machinery Import & Supply",
+    title: "SAGA Engineering (Pvt) Ltd",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
     siteName: "SAGA Engineering (Pvt) Ltd",
