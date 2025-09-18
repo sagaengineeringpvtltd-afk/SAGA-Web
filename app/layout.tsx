@@ -122,6 +122,7 @@ export default function RootLayout({
         <meta property="og:description" content="Professional industrial machinery import and supply services with comprehensive engineering solutions." />
         <meta property="og:image" content="https://sagaengineering.lk/Logo.webp" />
         <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
+<meta name="google-site-verification" content="ll0gWX3kxVtdAtXMwM6JDRph-Iwg0VCYA3e-wqh4_fY" />
         <link rel="canonical" href="https://sagaengineering.lk/" />
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
