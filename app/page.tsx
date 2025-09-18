@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     google: "MlaII3HRwKyXP_ox1HcnH54B97brHC2thjHIVXT68TI",
   },
   alternates: {
-    canonical: "https://sagaengineering.lk/",
+    canonical: "https://www.sagaengineering.lk/",
   },
 } // ✅ FIXED: added missing closing curly brace
 
