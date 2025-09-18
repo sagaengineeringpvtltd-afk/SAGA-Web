@@ -127,6 +127,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
+        <link rel="alternate" hrefLang="en" href="https://www.sagaengineering.lk/" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.sagaengineering.lk/" />
+
            <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addOrganizationJsonLd()}
