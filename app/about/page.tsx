@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: "About SAGA Engineering (Pvt) Ltd",
     description:
       "Discover SAGA Engineering's comprehensive mechanical engineering services and expertise in industrial equipment solutions.",
-    url: "https://sagaengineering.lk/about",
+    url: "https://www.sagaengineering.lk/about",
     type: "website",
   },
   alternates: {
-    canonical: "https://sagaengineering.lk/about",
+    canonical: "https://www.sagaengineering.lk/about",
   },
 }
 

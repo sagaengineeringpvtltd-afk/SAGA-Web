@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sagaengineering.lk/",
+    url: "https://www.sagaengineering.lk/",
     title: "SAGA Engineering (Pvt) Ltd",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",

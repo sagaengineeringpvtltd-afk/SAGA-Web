@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sagaengineering.lk/",
+    url: "https://www.sagaengineering.lk/",
     title: "SAGA Engineering (Pvt) Ltd",
     description:
       "Professional industrial machinery import and supply services with comprehensive engineering solutions.",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     google: "ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ",
   },
   alternates: {
-    canonical: "https://sagaengineering.lk/",
+    canonical: "https://www.sagaengineering.lk/",
   },
 }
 
@@ -65,8 +65,8 @@ export default function RootLayout({
         "name": "SAGA Engineering (Pvt) Ltd",
         "alternateName": "SAGA Engineering",
         "description": "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
-        "url": "https://sagaengineering.lk/",
-        "logo": "https://sagaengineering.lk/Logo.webp",
+        "url": "https://www.sagaengineering.lk/",
+        "logo": "https://www.sagaengineering.lk/Logo.webp",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+94711707030",
@@ -91,18 +91,18 @@ export default function RootLayout({
         "@type": "WebSite",
         "name": "SAGA Engineering (Pvt) Ltd",
         "alternateName": "SAGA Engineering",
-        "url": "https://sagaengineering.lk/",
+        "url": "https://www.sagaengineering.lk/",
         "description": "Your business is our passion - Professional industrial engineering solutions",
         "publisher": {
           "@type": "Organization",
           "name": "SAGA Engineering (Pvt) Ltd",
-          "logo": "https://sagaengineering.lk/Logo.webp"
+          "logo": "https://www.sagaengineering.lk/Logo.webp"
         },
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://sagaengineering.lk/search?q={search_term_string}"
+            "urlTemplate": "https://www.sagaengineering.lk/search?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -117,13 +117,13 @@ export default function RootLayout({
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta property="og:site_name" content="SAGA Engineering (Pvt) Ltd" />
-        <meta property="og:url" content="https://sagaengineering.lk/" />
+        <meta property="og:url" content="https://www.sagaengineering.lk/" />
         <meta property="og:title" content="SAGA Engineering (Pvt) Ltd" />
         <meta property="og:description" content="Professional industrial machinery import and supply services with comprehensive engineering solutions." />
-        <meta property="og:image" content="https://sagaengineering.lk/Logo.webp" />
+        <meta property="og:image" content="https://www.sagaengineering.lk/Logo.webp" />
         <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
 <meta name="google-site-verification" content="ll0gWX3kxVtdAtXMwM6JDRph-Iwg0VCYA3e-wqh4_fY" />
-        <link rel="canonical" href="https://sagaengineering.lk/" />
+        <link rel="canonical" href="https://www.sagaengineering.lk/" />
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
@@ -147,8 +147,8 @@ export default function RootLayout({
               alternateName: "SAGA Engineering",
               description:
                 "Industrial machinery import and supply company specializing in pumps, compressors, conveyors, motors, and electrical systems.",
-              url: "https://sagaengineering.lk/",
-              logo: "https://sagaengineering.lk/Logo.webp",
+              url: "https://www.sagaengineering.lk/",
+              logo: "https://www.sagaengineering.lk/Logo.webp",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+94711707030",
@@ -175,12 +175,12 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "SAGA Engineering (Pvt) Ltd",
               alternateName: "SAGA Engineering",
-              url: "https://sagaengineering.lk/",
+              url: "https://www.sagaengineering.lk/",
               description: "Your business is our passion - Professional industrial engineering solutions",
               publisher: {
                 "@type": "Organization",
                 name: "SAGA Engineering (Pvt) Ltd",
-                logo: "https://sagaengineering.lk/Logo.webp"
+                logo: "https://www.sagaengineering.lk/Logo.webp"
               },
               
               // Search functionality
@@ -197,25 +197,25 @@ export default function RootLayout({
               mainEntity: [
                 {
                   "@type": "WebPage",
-                  "@id": "https://sagaengineering.lk/contact",
+                  "@id": "https://www.sagaengineering.lk/contact",
                   name: "Contact Us",
                   description: "Address: 8/A, Kahathuduwa, Polgasowita, Colombo Email: sales@sagaengineering.lk, Phone: +94711707030",
-                  url: "https://sagaengineering.lk/contact"
+                  url: "https://www.sagaengineering.lk/contact"
                 },
                
                 {
                   "@type": "WebPage",
-                  "@id": "https://sagaengineering.lk/about",
+                  "@id": "https://www.sagaengineering.lk/about",
                   name: "Company Profile", 
                   description: "SAGA Engineering expertise in innovation, products and technology to provide comprehensive engineering solutions",
-                  url: "https://sagaengineering.lk/about"
+                  url: "https://www.sagaengineering.lk/about"
                 },
                 {
                   "@type": "WebPage",
-                  "@id": "https://sagaengineering.lk/services",
+                  "@id": "https://www.sagaengineering.lk/services",
                   name: "Our Services",
                   description: "Innovative Solutions focused on helping every business with industrial machinery and comprehensive engineering support",
-                  url: "https://sagaengineering.lk/services"
+                  url: "https://www.sagaengineering.lk/services"
                 }
               ]
             }),
@@ -234,25 +234,25 @@ export default function RootLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://sagaengineering.lk/"
+                  item: "https://www.sagaengineering.lk/"
                 },
                 {
                   "@type": "ListItem", 
                   position: 2,
                   name: "Contact Us",
-                  item: "https://sagaengineering.lk/contact"
+                  item: "https://www.sagaengineering.lk/contact"
                 },
                 {
                   "@type": "ListItem",
                   position: 4,
                   name: "Company Profile",
-                  item: "https://sagaengineering.lk/about"
+                  item: "https://www.sagaengineering.lk/about"
                 },
                 {
                   "@type": "ListItem",
                   position: 5,
                   name: "Services", 
-                  item: "https://sagaengineering.lk/services"
+                  item: "https://www.sagaengineering.lk/services"
                 }
               ]
             }),
